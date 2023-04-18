@@ -62,4 +62,4 @@ def articleDetailAPI(request,article_id):
         #Articles 모델에서 id값에 해당하는 object를 탐색 후 데이터 삭제
         article.delete()
 
-        return Response(status=status.HTTP_404_NOT_FOUND)
+        return Response(status=status.HTTP_204_NO_CONTENT)
